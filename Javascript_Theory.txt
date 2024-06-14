@@ -1,0 +1,543 @@
+1. Arithmetic Operators
+    +, -, *, /, %, **(Exponentiation Assignment Operator), ++, --
+
+    1.) Shift Assignment Operators
+        <<= (Left Shift Assignment Operator), >>= (Right Shift Assignment Operator), >>>= (Unsigned Right Shift Assignment Operator)
+    2.) Bitwise Assignment Operators
+        &= (Bitwise AND Assignment Operator ), ^= (Bitwise XOR Assignment Operator), |= (Bitwise OR Assignment Operator)
+    3.) Logical Assignment Operators
+        &&= (Logical AND assignment operator), ||= (Logical OR assignment operator), ??= (Nullish coalescing assignment operator)
+
+2. Assignment Operators
+    =, +=, -=, *=, /=, %=, **/
+
+3. Comparison Operators
+    ==, ===, !=, !==, >, <, >=, <=, ?
+
+4. Logical Operators
+    &&, ||, !
+
+5. Conditional Operators
+
+6. Type Operators
+    typeof, instanceof
+
+7. Bitwise Operators
+    &(AND), |(OR), ~(NOT), ^(XOR), <<(left shift), >>(right shift), >>>(unsigned right shift)
+
+JavaScript has 8 Datatypes
+
+1. String
+2. Number
+3. Bigint
+4. Boolean
+5. Undefined
+5. Null
+7. Symbol
+8. Object
+
+The Object Datatype
+
+The object data type can contain:
+1. An object
+2. An array
+3. A date
+
+Common HTML Events
+
+onchange : An HTML element has been changed
+onclick : The user clicks an HTML element
+onmouseover : The user moves the mouse over an HTML element
+onmouseout : The user moves the mouse away from an HTML element
+onkeydown : The user pushes a keyboard key
+onload : The browser has finished loading the page
+
+JavaScript String Methods
+
+length : Returns a length of the String.
+slice(start, end) : Returns a new string from a given string to the start to end position
+substring(start, end) : Returns a new string from a given string to the start to end position.
+substr(start, length) :Returns a new string from the given arguments.
+replace(which character(s) you want to change, new character(s) you want to replace) : Replace the string. But only first occurrence
+replaceAll(which character(s) you want to change, new character(s) you want to replace) : Replace the string by given argument
+toUpperCase() : Convert a given string to Upper Case ex. "Hello World".toUpperCase()
+toLowerCase() : Convert a given string to Lower Case ex. "Hello World".toLowerCase()
+concat() : Join two String. 
+trim() : Remove whitespace from both the side starting and ending.
+trimStart() : Remove whitespace from starting the string.
+trimEnd() : Remove whitespace from ending the string.
+padStart(new length of a string, "new element add like (+ - 0...)") : Returns a new String.
+padEnd(new length of a string, "new element add like (+ - 0...)") : Returns a new String.
+charAt(index) : Return a character which is placed in given index.
+charCodeAt(index) : Returns the Unicode of the character at a specified index(position) in a string.
+split("+") : Returns an array. give String
+join(' ') : Returns a String. give Array
+repeat(5) : Returns a new string after the repeat the given number of times.
+
+JavaScript Search Methods
+
+indexOf() : Give index where the given value is placed it give only first occurrence in string 
+    if value is not found it will give -1
+lastIndexOf() : Give index where the given value is placed it give only last occurrence in string 
+    if value is not found it will give -1
+search() : method matches a string against a regular expression. method returns the index (position) of the first match.
+    method returns -1 if no match is found. search method is case sensitive
+match() : match() method matches a string against a regular expression. 
+    match() method returns an array with the matches.
+matchAll() : 
+includes("character(s)") : Check the given character(s) is/are present in the string or not. Returns Boolean value
+startsWith() : Check the string is staring with the given character(s)/String. Returns Boolean value
+endsWith() : Check the string is ending with the given character(s)/String. Returns Boolean value
+
+JavaScript Template Literals
+
+Template Literals
+Template Strings
+String Templates
+Back-Tics Syntax(``)
+
+JavaScript Number Methods
+
+toExponential() : Returns a number written in exponential notation
+toFixed() : Returns a number written with a number of decimals
+toPrecision() : Returns a number written with a specified length
+ValueOf() : Returns a number as a number
+
+Converting Variables to Numbers
+
+Number() : Returns a number converted from its argument.
+parseFloat() : Parses its argument and returns a floating point number
+parseInt() : Parses its argument and returns a whole number
+
+Number Object Methods
+
+Number.isInteger() : Returns true if the argument is an integer
+Number.isSafeInteger() : Returns true if the argument is a safe integer
+Number.parseFloat() : Converts a string to a number
+Number.parseInt() : Converts a string to a whole number
+
+JavaScript Array Methods and Properties
+
+*concat() : Joins arrays and returns an array with the joined arrays.
+*entries() : Returns a key/value pair Array Iteration Object.
+*every() : Checks if every element in an array pass a test.
+fill() : Fill the elements in an array with a static value
+*filter() : Creates a new array with every element in an array that pass a test.
+*find() : Returns the value of the first element in an array that pass a test.
+*findIndex() : Returns the index of the first element in an array that pass a test.
+*forEach() : Calls a function for each array element
+*includes() : Check if an array contains the specified element.
+*indexOf() : Search the array for an element and returns its position.
+*isArray() : Checks whether an object is an array
+*join() : Joins all elements of an array into a string.
+keys() : Returns a Array Iteration Object, containing the keys of the original array
+lastIndexOf() : Search the array for an element, starting at the end, and returns its position
+*length : Sets or returns the number of elements in an array
+*map() : Creates a new array with the result of calling a function for each array element.
+*pop() : Removes the last element of an array, and returns that element.
+prototype : Allows you to add properties and methods to an Array object
+*push() : Adds new elements to the end of an array, and returns the new length.
+*reduce() : Reduce the values of an array to a single value (going left-to-right).
+reduceRight() : Reduce the values of an array to a single value (going right-to-left)
+*reverse() : Reverses the order of the elements in an array
+*shift() : Removes the first element of an array, and returns that element.
+*slice(start, end) : The slice() method can be used to create a copy of an array or return a portion of an array. 
+    It is important to note that the slice() method does not alter the original array but instead creates a shallow copy.
+*some() : Checks if any of the elements in an array pass a test.
+*sort() : Sorts the elements of an array.
+*splice(start, end) : the splice() method will change the contents of the original array. 
+    The splice() method is used to add or remove elements of an existing array and 
+    the return value will be the removed items from the array.
+*toString() : Converts an array to a string, and returns the result.
+*unshift() : Adds new elements to the beginning of an array, and returns the new length.
+valueOf() : Returns the primitive value of an array
+*flat() : used to flatten an array, to reduce the nesting of an array.
+*flatmap() : method first of all maps every element with the help of a mapping function, 
+    then flattens the input array element into a new array. 
+
+filter() vs find()
+1. filter return all the elements which is match the condition while the find method only return the first one.
+2. filter return a new array while find method only return the first element which is passed the condition not an array.
+
+Date 
+ date start in JavaScript is (jan 1st 1970)
+const d = new Date(); (YYYY-MM-DD)
+
+Thu Dec 15 2022 12:21:12 GMT+0530 (India Standard Time)
+
+d.getFullYear(); return current full year (2020)
+d.getMonth() + 1; return current month (12)
+d.getDate(); return current day (15)
+d.getHours(); return current hour (11)
+d.getMinutes(); return current minute (42)
+d.getSeconds(); return current Seconds (20)
+
+Date objects are created with the new Date() constructor.
+There are 9 ways to create a new date object:
+
+new Date()
+new Date(date string)
+new Date(year,month)
+new Date(year,month,day)
+new Date(year,month,day,hours)
+new Date(year,month,day,hours,minutes)
+new Date(year,month,day,hours,minutes,seconds)
+new Date(year,month,day,hours,minutes,seconds,ms)
+new Date(milliseconds)
+
+Date Methods
+
+toDateString() : method converts a date to a more readable format
+Thu Dec 15 2022
+toUTCString() : method converts a date to a string using the UTC standard (Universal Time Coordinated )
+Thu, 15 Dec 2022 06:50:21 GMT
+toISOString() : method converts a date to a string using the ISO standard (International Organization for Standardization)
+2022-12-15T06:50:32.839Z
+
+Math function
+
+Math.PI : 3.14
+Math.round(x) : Returns x rounded to its nearest integer
+Math.ceil(x) : Returns x rounded up to its nearest integer
+Math.floor(x) : Returns x rounded down to its nearest integer
+Math.trunc(x) : Returns the integer part of x (new in ES6)
+Math.pow(x, y) : returns the value of x to the power of y
+Math.sqrt(x) : returns the square root of x
+Math.abs(x) : returns the absolute (positive) value of x
+Math.random() : returns a random number between 0 (inclusive), and 1 (exclusive)
+Math.acos(x) : Returns the arccosine of x, in radians
+Math.acosh(x)	Returns the hyperbolic arccosine of x
+Math.asin(x)	Returns the arcsine of x, in radians
+Math.asinh(x)	Returns the hyperbolic arcsine of x
+Math.atan(x)	Returns the arctangent of x as a numeric value between -PI/2 and PI/2 radians
+Math.atan2(y, x)	Returns the arctangent of the quotient of its arguments
+Math.atanh(x)	Returns the hyperbolic arctangent of x
+Math.cbrt(x)	Returns the cubic root of x
+Math.cos(x)	Returns the cosine of x (x is in radians)
+Math.cosh(x)	Returns the hyperbolic cosine of x
+Math.exp(x)	Returns the value of Ex
+Math.log(x)	Returns the natural logarithm (base E) of x
+Math.max(x, y, z, ..., n)	Returns the number with the highest value
+Math.min(x, y, z, ..., n)	Returns the number with the lowest value
+Math.sign(x)	Returns if x is negative, null or positive (-1, 0, 1)
+Math.sin(x)	Returns the sine of x (x is in radians)
+Math.sinh(x)	Returns the hyperbolic sine of x
+Math.tan(x)	Returns the tangent of an angle
+Math.tanh(x)	Returns the hyperbolic tangent of a number
+
+JavaScript Sets
+
+A JavaScript Set is a collection of unique values.
+Each value can only occur once in a Set.
+
+new Set()	Creates a new Set
+add()	Adds a new element to the Set
+delete()	Removes an element from a Set
+has()	Returns true if a value exists in the Set
+forEach()	Invokes a callback for each element in the Set
+values()	Returns an iterator with all the values in a Set
+Property	Description
+size	Returns the number of elements in a Set
+
+JavaScript Maps
+
+A Map holds key-value pairs where the keys can be any datatype.
+A Map remembers the original insertion order of the keys.
+
+new Map()	Creates a new Map
+set()	Sets the value for a key in a Map
+get()	Gets the value for a key in a Map
+delete()	Removes a Map element specified by the key
+has()	Returns true if a key exists in a Map
+forEach()	Calls a function for each key/value pair in a Map
+entries()	Returns an iterator with the [key, value] pairs in a Map
+Property	Description
+size : Returns the number of elements in a Map
+
+JavaScript Regular Expressions
+
+i : Perform case-insensitive matching	
+g : Perform a global match (find all matches rather than stopping after the first match)	
+m : Perform multiline matching
+\d : Find a digit.
+\s : Find a whitespace character	
+\b : Find a match at the beginning of a word like this: \bWORD, or at the end of a word like this: WORD\b	
+\uxxxx : Find the Unicode character specified by the hexadecimal number xxxx
+n+ : Matches any string that contains at least one n
+n* : Matches any string that contains zero or more occurrences of n
+n? : Matches any string that contains zero or one occurrences of n
+
+The Error Object Properties
+    
+name	Sets or returns an error name
+message	Sets or returns an error message (a string)
+
+Error Name Values
+
+EvalError : An error has occurred in the eval() function
+RangeError : A number "out of range" has occurred
+ReferenceError : An illegal reference has occurred
+SyntaxError	A syntax error has occurred
+TypeError	A type error has occurred
+URIError	An error in encodeURI() has occurred
+
+JavaScript Scope
+
+JavaScript has 3 types of scope:
+
+Block scope
+Function scope
+Global scope
+
+JavaScript Hoisting
+
+JavaScript Declarations are Hoisted
+
+In JavaScript, a variable can be declared after it has been used.
+In other words; a variable can be used before it has been declared.            
+Ex : 
+x = 5; // Assign 5 to x
+elem = document.getElementById("demo"); // Find an element
+elem.innerHTML = x;                     // Display x in the element
+var x; // Declare x
+ 
+ OOP in JavaScript
+
+Abstraction : basically means to ignore or to hide details that don't matter, 
+                This allows us to get an overview perspective of whatever it is that we're implementing,
+                instead of messing with details that don't really matter to our implementation.
+
+Encapsulation : Encapsulation basically means to keep some properties and methods private inside the class,
+                so that they're not accessible from outside the class. some methods can be exposed as a public interface,
+
+Inheritance : inheritance makes all properties and methods of a certain class available to a child class, of a certain class available to a child class,
+                Forming a hierarchical relationship between classes. This allows us to reuse common logic and
+                to model real-World relationship.
+
+Polymorphism : A child class can override a method it inherited from a parent class (it's more complex that, but enough for our purposes).
+
+
+When a new object is create of an class
+1. New {} is created.
+2. function is called, this = {}
+3. {} linked to prototype (Create prototype of an object ex, abc.__proto__)
+4. function automatically return {}
+
+    Ex. 
+
+    const Person  = function(firstName, birthYear) {
+        this.firstName = firstName;
+        this.birthYear = birthYear;
+    };
+    const abc = new Person("abc", 2004);
+    const xyz = new Person("xyz", 1995);
+    const pqr = "pqr";
+
+    // To check if a variable is a class object or not 
+    console.log(abc instanceof Person); // True
+    console.log(pqr instanceof Person); // False
+
+    // Creating a method
+    Person.prototype.calcAge = function () {
+        console.log(2022 - this.birthYear);
+    }
+
+    abc.calcAge();
+
+    // prototype of an Object
+    console.log(abc.__proto__);
+
+JavaScript classes
+
+1. Classes are not hoisted.
+2. Classes are first-class citizes
+3. classes are executed in strict mode 
+
+ex.
+class personcl {
+
+    constructor(name, age)
+    {
+        this.name = name;
+        this.age = age;
+    }
+
+    //Instance Method
+    //this method will be added to .prototype property
+    calAge () {
+        console.log(2022 - this.age);
+    };
+
+    greet () {
+        console.log(`Hello ${this.name}`);
+    }
+}
+
+const chirag = new personcl ("Chirag", 2000);
+chirag.greet();
+chirag.calAge();
+
+Getter and setter method & Static Method
+
+Ex.
+class personcl {
+
+    constructor(name, year) {
+        this.set_fullname = name;
+        this.birthYear = year;
+    }
+
+    set set_fullname (name) {
+        console.log(name);
+        if (name.includes(' ')) this._fullname = name;
+        else alert(`${name} is not a full name`);
+    }
+
+    get get_fullname () {
+        return this._fullname;
+    }
+
+    get get_age() {
+        return 2022 - this.birthYear;
+    }
+
+    //static method
+    static hey () {
+        console.log("Hey there...");
+        console.log(this);
+    }
+}
+
+const chirag = new personcl ("Chirag Parmar", 2000);
+console.log(chirag);
+console.log(chirag.get_fullname);
+console.log(chirag.get_age);
+personcl.hey();
+
+---------- Object Create ----------
+
+const PersonProto = {
+    init (firstName, birthAge) {
+        this.firstName = firstName;
+        this.birthAge = birthAge;
+    },
+
+    clacAge () {
+      return 2022 - this.birthAge;  
+    }
+}
+
+// First way without init method
+const chirag = Object.create(PersonProto);
+console.log(chirag);
+chirag.firstName = "Chirag";
+chirag.birthAge = 2000;
+console.log(chirag.clacAge());
+console.log(chirag.__proto__ === PersonProto);
+
+//Second way using init method
+const khushi = Object.create(PersonProto);
+khushi.init("Khushi", 2001);
+console.log(khushi.clacAge());
+
+---------- Inheritance Between Classes Constructor Functions ----------
+
+const Person = function (firstName, birthYear) {
+    this.firstName = firstName;
+    this.birthYear = birthYear;
+}
+
+Person.prototype.calcAge = function () {
+    return 2022 - this.birthYear;
+}
+
+const Student = function (firstName, birthYear, course) {
+    Person.call(this, firstName, birthYear);
+    this.course = course;
+}
+
+Student.prototype = Object.create(Person.prototype);
+Student.prototype.introduce = function () {
+    return `My Name is ${this.firstName} and I study ${this.course}`;
+}
+
+const mike = new Student("Mike", 1998, "MCA");
+console.log(mike.introduce());
+console.log(mike.calcAge());
+
+console.log(mike instanceof Student);
+console.log(mike instanceof Person);
+console.log(mike instanceof Object);
+
+console.log(mike.__proto__);
+
+---------- Inheritance Between Classes ES6 Classes ----------
+
+class personcl {
+
+    constructor(name, year) {
+        this.set_fullname = name;
+        this.birthYear = year;
+    }
+
+    set set_fullname (name) {
+        if (name.includes(' ')) this._fullname = name;
+        else alert(`${name} is not a full name`);
+    }
+
+    get get_fullname () {
+        return this._fullname
+    }
+}
+
+class Studentcl extends personcl {
+
+constructor(fullname, birthYear, course){
+    super(fullname, birthYear);
+    this.course = course;
+}
+
+    introduce () {
+        console.log(`My name is ${this.get_fullname} and I study in ${this.course}`);
+    }
+
+    clacAge () {
+        console.log(`I'm ${2022 - this.birthYear} old.`);
+    }
+}
+
+const chirag = new Studentcl ("Chirag Parmar", 2000, "Computer Science");
+// console.log(chirag);
+chirag.introduce();
+chirag.clacAge();
+
+---------- Inheritance Between Classes Object.create ----------
+
+const PersonProto = {
+    init (firstName, bitrhYear) {
+        this.firstName = firstName;
+        this.bitrhYear = bitrhYear;
+    },
+
+    clacAge () {
+      console.log(2022 - this.bitrhYear);  
+    }
+}
+
+const StudentProto = Object.create(PersonProto);
+
+StudentProto.init = function (firstName, bitrhYear, course) {
+    PersonProto.init.call(this, firstName, bitrhYear);
+    this.course = course;
+}
+
+StudentProto.introduce = function () {
+    console.log(`My Name is ${this.firstName} and I study in ${this.course}`);
+}
+    
+const khushi = Object.create(StudentProto);
+khushi.init("Khushi", 2001, "Computer Science");
+console.log(khushi);
+khushi.introduce();
+khushi.clacAge();
+

@@ -1,0 +1,260 @@
+Question 1     ==================================================
+Have the function ArrayChallenge(strArr) take the array of strings stored in strArr and return the third largest word within it. 
+So for example: if strArr is ["hello", "world", "before", "all"] your output should be world because "before" is 6 letters long, 
+and "hello" and "world" are both 5, but the output should be world because it appeared as the last 5 letter word in the array. 
+If strArr was ["hello", "world", "after", "all"] the output should be after because the first three words are all 5 letters long, 
+so return the last one. The array will have at least three strings and each string will only contain letters.
+Examples
+Input: ["coder","byte","code"]
+Output: code
+Input: ["abc","defg","z","hijk"]
+Output: abc
+
+Question 2     ==================================================
+Write a JavaScript program to find all unique values in given array numbers.
+const arr = [1, 2, 2, 3, 4, 4, 5];
+
+Question 3     ==================================================
+Write a JavaScript program to count the number of arrays inside a given array.
+const arr = [2,8,[6],3,3,5,3,4,[5,4]];
+
+Question 4     ==================================================
+Write a JavaScript program that takes an array with mixed data type and calculate the sum of all numbers.
+const arr = [2, "11", 3, "a2", false, 5, 7, 1]
+
+Question 5     ==================================================
+Write a JavaScript program to find the most frequent item of an array.
+const arr = [3, 'a', 'a', 'a', 2, 3, 'a', 3, 'a', 2, 4, 9, 3];
+
+Question 6     ==================================================
+Write a JavaScript function to get a random item from an array.
+const arr = [46, 33, 65, 76, 74, 31, 91];
+
+Question 7     ==================================================
+Julia and Kate are doing a study on dogs. So each of them asked 5 dog owners
+about their dog's age, and stored the data into an array (one array for each). For
+now, they are just interested in knowing whether a dog is an adult or a puppy.
+A dog is an adult if it is at least 3 years old, and it's a puppy if it's less than 3 years old.
+
+Your tasks:
+Create a function 'checkDogs', which accepts 2 arrays of dog's ages
+('dogsJulia' and 'dogsKate'), and does the following things:
+1. Julia found out that the owners of the first and the last two dogs actually have
+    cats, not dogs! So create a shallow copy of Julia's array, and remove the cat
+    ages from that copied array (because it's a bad practice to mutate function parameters)
+2. Create an array with both Julia's (corrected) and Kate's data
+3. For each remaining dog, log to the console whether it's an adult ("Dog 🐶 number 1
+    is an adult, and is 5 years old") or a puppy ("Dog number 2 is still a puppy")
+4. Run the function for both test datasets
+
+Test data:
+* Data 1: Julia's data [3, 5, 2, 12, 7], Kate's data [4, 1, 15, 8, 3]
+* Data 2: Julia's data [9, 16, 6, 8, 3], Kate's data [10, 5, 6, 1, 4]
+
+Hints: Use tools from all lectures in this section so far
+
+
+Question 8     ==================================================
+Julia and Kate are doing a study on dogs. So each of them asked 5 dog owners
+about their dog's age, and stored the data into an array (one array for each). For
+now, they are just interested in knowing whether a dog is an adult or a puppy.
+A dog is an adult if it is at least 3 years old, and it's a puppy if it's less than 3 years old.
+
+Your tasks:
+Create a function 'checkDogs', which accepts 2 arrays of dog's ages
+('dogsJulia' and 'dogsKate'), and does the following things:
+1. Julia found out that the owners of the first and the last two dogs actually have
+    cats, not dogs! So create a shallow copy of Julia's array, and remove the cat
+    ages from that copied array (because it's a bad practice to mutate function parameters)
+2. Create an array with both Julia's (corrected) and Kate's data
+3. For each remaining dog, log to the console whether it's an adult ("Dog 🐶 number 1
+    is an adult, and is 5 years old") or a puppy ("Dog number 2 is still a puppy")
+4. Run the function for both test datasets
+
+Test data:
+* Data 1: Julia's data [3, 5, 2, 12, 7], Kate's data [4, 1, 15, 8, 3]
+* Data 2: Julia's data [9, 16, 6, 8, 3], Kate's data [10, 5, 6, 1, 4]
+
+Question 9     ==================================================
+Let's go back to Julia and Kate's study about dogs. This time, they want to convert
+dog ages to human ages and calculate the average age of the dogs in their study.
+
+Your tasks:
+Create a function 'calcAverageHumanAge', which accepts an arrays of dog's
+ages ('ages'), and does the following things in order:
+1. Calculate the dog age in human years using the following formula: if the dog is <= 2 years old, 
+    humanAge = 2 * dogAge. If the dog is > 2 years old,
+    humanAge = 16 + dogAge * 4
+2. Exclude all dogs that are less than 18 human years old (which is the same as
+    keeping dogs that are at least 18 years old)
+3. Calculate the average human age of all adult dogs (you should already know
+    from other challenges how we calculate averages 😉)
+4. Run the function for both test datasets
+
+Test data:
+* Data 1: [5, 2, 4, 1, 15, 8, 3]
+* Data 2: [16, 6, 10, 5, 6, 1, 4] 
+
+Question 10     ==================================================
+Have the function ArrayChallenge(strArr) take the array of strings stored in strArr and return the third largest word within it. 
+So for example: if strArr is ["hello", "world", "before", "all"] your output should be world because "before" is 6 letters long, 
+and "hello" and "world" are both 5, but the output should be world because it appeared as the last 5 letter word in the array. 
+If strArr was ["hello", "world", "after", "all"] the output should be after because the first three words are all 5 letters long, 
+so return the last one. The array will have at least three strings and each string will only contain letters.
+Examples
+Input: ["coder","byte","code"]
+Output: code
+Input: ["abc","defg","z","hijk"]
+Output: abc
+
+Question 11     ==================================================  AA question thai to karje baki reva deje
+Have the function MathChallenge(str) take the str parameter, which will be a simple mathematical formula with three numbers, 
+a single operator (+, -, *, or /) and an equal sign (=) and return the digit that completes the equation. 
+In one of the numbers in the equation, there will be an x character, and your program should determine what digit is missing. 
+For example, if str is "3x + 12 = 46" then your program should output 4. The x character can appear in any of the three numbers and 
+all three numbers will be greater than or equal to 0 and less than or equal to 1000000.
+Examples
+Input: "4 - 2 = x"
+Output: 2
+Input: "1x0 * 12 = 1200"
+Output: 0
+
+Question 12     ==================================================
+Have the function alphabetSoup(str) take the str string parameter being
+passed and return the string with the letters in alphabetical order (ie.
+hello becomes ehllo). Assume numbers and punctuation symbols will not be
+included in the string.
+
+Question 13     ==================================================
+Have the function arithGeo(arr) take the array of numbers stored in arr and
+return the string "Arithmetic" if the sequence follows an arithmetic pattern
+or return "Geometric" if it follows a geometric pattern. If the sequence
+doesn't follow either pattern return -1. An arithmetic sequence is one where
+the difference between each of the numbers is consistent, where as in a
+geometric sequence, each term after the first is multiplied by some constant
+or common ratio. Arithmetic example: [2, 4, 6, 8] and Geometric example: [2,
+6, 18, 54]. Negative numbers may be entered as parameters, 0 will not be
+entered, and no array will contain all the same elements.
+
+@param  {array} arr
+@return {string} or -1 on failure
+
+Question 14     ==================================================
+Have the function arrayAdditionI(arr) take the array of numbers stored in arr
+and return the string true if any combination of numbers in the array
+(excluding the largest number) can be added up to equal the largest number in
+the array, otherwise return the string false. For example: if arr contains
+[4, 6, 23, 10, 1, 3] the output should return true because 4 + 6 + 10 + 3 =
+23. The array will not be empty, will not contain all the same elements, and
+may contain negative numbers.
+
+@param  {array} arr
+@return {string} true or false
+
+Question 15     ==================================================
+Have the function countingMinutesI(str) take the str parameter being passed
+which will be two times (each properly formatted with a colon and am or pm)
+separated by a hyphen and return the total number of minutes between the two
+times. The time will be in a 12 hour clock format. For example: if str is
+9:00am-10:00am then the output should be 60. If str is 1:00pm-11:00am the
+output should be 1320.
+
+@param  {string} str
+@return {number}
+
+Question 16     ==================================================
+Have the function divisionStringified(num1,num2) take both parameters being
+passed, divide num1 by num2, and return the result as a string with properly
+formatted commas. If an answer is only 3 digits long, return the number with
+no commas (ie. 2 / 3 should output "1"). For example: if num1 is 123456789
+and num2 is 10000 the output should be "12,346".
+
+@param  {number} num1
+@param  {number} num2
+@return {string}
+
+Question 17     ==================================================
+Have the function exOh(str) take the str parameter being passed and return
+the string true if there is an equal number of x's and o's, otherwise return
+the string false. Only these two letters will be entered in the string, no
+punctuation or numbers. For example: if str is "xooxxxxooxo" then the output
+should return false because there are 6 x's and 5 o's.
+
+@param  {string} str
+@return {string}
+
+Question 18     ==================================================
+Have the function firstFactorial(num) take the num parameter being passed and
+return the factorial of it (e.g. if num = 4, return (4 * 3 * 2 * 1)). For the
+test cases, the range will be between 1 and 18 and the input will always be
+an integer.
+
+@param  {number} num
+@return {number}
+
+Question 19     ==================================================
+Have the function firstReverse(str) take the str parameter being passed and
+return the string in reversed order. For example: if the input string is
+"Hello World and Coders" then your program should return the string
+"sredoC dna dlroW olleH".
+
+@param  {string} str A string to be reversed
+@return {string} Reversed str
+
+Question 20     ==================================================
+Have the function letterCapitalize(str) take the str parameter being passed
+and capitalize the first letter of each word. Words will be separated by only
+one space.
+
+@param  {string} str
+@return {string}
+
+Question 21     ==================================================
+Have the function letterChanges(str) take the str parameter being passed and
+modify it using the following algorithm. Replace every letter in the string
+with the letter following it in the alphabet (ie. c becomes d, z becomes a).
+Then capitalize every vowel in this new string (a, e, i, o, u) and finally
+return this modified string.
+
+@param  {string} str
+@return {string}
+
+Question 22     ==================================================
+Have the function longestWord(sen) take the sen parameter being passed and
+return the largest word in the string. If there are two or more words that
+are the same length, return the first word from the string with that length.
+Ignore punctuation and assume sen will not be empty.
+
+@param  {string} sen
+@return {string}
+
+Question 23     ==================================================
+Have the function meanMode(arr) take the array of numbers stored in arr and
+return 1 if the mode equals the mean, 0 if they don't equal each other (ie.
+[5, 3, 3, 3, 1] should return 1 because the mode (3) equals the mean (3)).
+The array will not be empty, will only contain positive integers, and will
+not contain more than one mode.
+
+@param  {array} arr
+@return {number}
+
+Question 24     ==================================================
+Have the function numberAddition(str) take the str parameter, search for all
+the numbers in the string, add them together, then return that final number.
+For example: if str is "88Hello 3World!" the output should be 91. You will
+have to differentiate between single digit numbers and multiple digit numbers
+like in the example above. So "55Hello" and "5Hello 5" should return two
+different answers. Each string will contain at least one letter or symbol.
+
+@param  {string} str
+@return {number}
+
+Question 25     ==================================================
+Have the function palindrome(str) take the str parameter being passed and
+return the string true if the parameter is a palindrome, (the string is the
+same forward as it is backward) otherwise return the string false. For
+example: "racecar" is also "racecar" backwards. Punctuation and numbers will
+not be part of the string.
+
+@param  {string} str
+@return {string}
