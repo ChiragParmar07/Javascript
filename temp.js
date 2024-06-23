@@ -295,13 +295,13 @@
 // const k = 5;
 
 function maxMin(k, arr) {
-	arr.sort((a, b) => a - b)
-	let minDiff = Infinity
+	arr.sort((a, b) => a - b);
+	let minDiff = Infinity;
 	for (let i = 0; i < arr.length - k + 1; i++) {
-		let diff = arr[i + k - 1] - arr[i]
-		minDiff = Math.min(diff, minDiff)
+		let diff = arr[i + k - 1] - arr[i];
+		minDiff = Math.min(diff, minDiff);
 	}
-	return minDiff
+	return minDiff;
 }
 // console.log(maxMin(k, arr));
 
@@ -335,15 +335,15 @@ function maxMin(k, arr) {
 
 // 21   Recursive Digit Sum  (week 2) complete
 const n =
-	'7404954009694227446246375747227852213692570890717884174001587537145838723390362624487926131161112710589127423098959327020544003395792482625191721603328307774998124389641069884634086849138515079220750462317357487762780480576640689175346956135668451835480490089962406773267569650663927778867764315211280625033388271518264961090111547480467065229843613873499846390257375933040086863430523668050046930387013897062106309406874425001127890574986610018093859693455518413268914361859000614904461902442822577552997680098389183082654625098817411306985010658756762152160904278169491634807464356130877526392725432086439934006728914411061861235300979536190100734360684054557448454640750198466877185875290011114667186730452681943043971812380628117527172389889545776779555664826488520325234792648448625225364535053605515386730925070072896004645416713682004600636574389040662827182696337187610904694029221880801372864040345567230941110986028568372710970460116491983700312243090679537497139499778923997433720159174153'
-const k = 100000
+	'7404954009694227446246375747227852213692570890717884174001587537145838723390362624487926131161112710589127423098959327020544003395792482625191721603328307774998124389641069884634086849138515079220750462317357487762780480576640689175346956135668451835480490089962406773267569650663927778867764315211280625033388271518264961090111547480467065229843613873499846390257375933040086863430523668050046930387013897062106309406874425001127890574986610018093859693455518413268914361859000614904461902442822577552997680098389183082654625098817411306985010658756762152160904278169491634807464356130877526392725432086439934006728914411061861235300979536190100734360684054557448454640750198466877185875290011114667186730452681943043971812380628117527172389889545776779555664826488520325234792648448625225364535053605515386730925070072896004645416713682004600636574389040662827182696337187610904694029221880801372864040345567230941110986028568372710970460116491983700312243090679537497139499778923997433720159174153';
+const k = 100000;
 
 function superDigit(n, k) {
-	if (n.length === 1 && k === 1) return parseInt(n)
-	let total = n.split('').reduce((a, b) => parseInt(a) + parseInt(b)) * k
-	return superDigit(total.toString(), 1)
+	if (n.length === 1 && k === 1) return parseInt(n);
+	let total = n.split('').reduce((a, b) => parseInt(a) + parseInt(b)) * k;
+	return superDigit(total.toString(), 1);
 }
-console.log(superDigit(n, k))
+console.log(superDigit(n, k));
 
 // 22
 
@@ -526,43 +526,43 @@ console.log(superDigit(n, k))
 
 const mathChallange = (str) => {
 	for (let i = 0; i <= 100; i++) {
-		const data = str.split('=')
+		const data = str.split('=');
 		if (data[0].includes('x')) {
-			data[0] = data[0].replace('x', i)
+			data[0] = data[0].replace('x', i);
 			if (eval(data[0]) === data[1]) {
-				return i
+				return i;
 			} else {
-				data[0] = data[0].replace(i, 'x')
+				data[0] = data[0].replace(i, 'x');
 			}
 		} else {
-			return eval(data[0])
+			return eval(data[0]);
 		}
 	}
-	return str
-}
-console.log(mathChallange('4x - 2 = 38'))
+	return str;
+};
+console.log(mathChallange('4x - 2 = 38'));
 
 // 28.
 /*
 Split Word into Two and Check Existence in Comma Separated String Sequence
 */
-const strArr1 = ['powerhouse', 'p,pow,power,house,pose,poser']
-const strArr2 = ['baseball', 'b,ba,base,ball,baseba,all']
+const strArr1 = ['powerhouse', 'p,pow,power,house,pose,poser'];
+const strArr2 = ['baseball', 'b,ba,base,ball,baseba,all'];
 
 function splitWordIntoTwo(strArr) {
-	const word = strArr[0]
-	const wordArr = strArr[1].split(',')
-	const newArr = []
+	const word = strArr[0];
+	const wordArr = strArr[1].split(',');
+	const newArr = [];
 
 	for (let i = 0; i < wordArr.length; i++) {
 		for (let j = 0; j < wordArr.length; j++) {
 			if (wordArr[i] + wordArr[j] === word) {
-				newArr.push(wordArr[i])
-				newArr.push(wordArr[j])
+				newArr.push(wordArr[i]);
+				newArr.push(wordArr[j]);
 			}
 		}
 	}
-	return newArr.toString()
+	return newArr.toString();
 }
 
 // console.log(splitWordIntoTwo(strArr1));
@@ -604,11 +604,11 @@ return round of (sum / total no of letter)
 // console.log(strOps(str2));
 
 // 30.
-const strArr = ['baseball', 'a,all,b,ball,bas,base,cat,code,d,e,quit,z']
-const word = strArr[0]
-const discArr = strArr[1].split(',')
+const strArr = ['baseball', 'a,all,b,ball,bas,base,cat,code,d,e,quit,z'];
+const word = strArr[0];
+const discArr = strArr[1].split(',');
 
-let ansarr = []
+let ansarr = [];
 for (let i = 0; i < discArr.length; i++) {
 	// if ()
 }

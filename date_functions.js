@@ -12,17 +12,17 @@
 // new Date(year,month,day,hours,minutes,seconds,ms)
 // new Date(milliseconds)
 
-const d = new Date()
+const d = new Date();
 
-console.log(d) // Wed Dec 21 2022 10:06:30 GMT+0530 (India Standard Time)
-console.log(d.getTime()) // 1671597373280
-console.log(d.getHours()) // current Hour 10
-console.log(d.getMinutes()) // current Minute 4
-console.log(d.getSeconds()) // current Second 42
-console.log(d.getMilliseconds()) // current millisecond 261
-console.log(d.getDate()) // current Date  21
-console.log(d.getMonth() + 1) // current Month 12
-console.log(d.getFullYear()) // current year 2022
+console.log(d); // Wed Dec 21 2022 10:06:30 GMT+0530 (India Standard Time)
+console.log(d.getTime()); // 1671597373280
+console.log(d.getHours()); // current Hour 10
+console.log(d.getMinutes()); // current Minute 4
+console.log(d.getSeconds()); // current Second 42
+console.log(d.getMilliseconds()); // current millisecond 261
+console.log(d.getDate()); // current Date  21
+console.log(d.getMonth() + 1); // current Month 12
+console.log(d.getFullYear()); // current year 2022
 
 // ---------- toDateString() : toDateString() method converts a date to a more readable format
 // console.log(d.toDateString());  // Wed Dec 21 2022

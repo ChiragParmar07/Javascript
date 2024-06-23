@@ -25,98 +25,99 @@ Then, call the function again with players from game.scored
 -->
 
 <script>
-    const game = 
-    {
-        team1: 'Bayern Munich',
-        team2: 'Borrussia Dortmund',
-        players: [
-            [
-                'Neuer',
-                'Pavard',
-                'Martinez',
-                'Alaba',
-                'Davies',
-                'Kimmich',
-                'Goretzka',
-                'Coman',
-                'Muller',
-                'Gnarby',
-                'Lewandowski',
-            ],
-            [
-                'Burki',
-                'Schulz',
-                'Hummels',
-                'Akanji',
-                'Hakimi',
-                'Weigl',
-                'Witsel',
-                'Hazard',
-                'Brandt',
-                'Sancho',
-                'Gotze',
-            ],
-        ],
-        score: '4:0',
-        scored: ['Lewandowski', 'Gnarby', 'Lewandowski',
-        'Hummels'],
-        date: 'Nov 9th, 2037',
-        odds: {
-            team1: 1.33,
-            x: 3.25,
-            team2: 6.5,
-        },
-    };
+	const game = {
+		team1: 'Bayern Munich',
+		team2: 'Borrussia Dortmund',
+		players: [
+			[
+				'Neuer',
+				'Pavard',
+				'Martinez',
+				'Alaba',
+				'Davies',
+				'Kimmich',
+				'Goretzka',
+				'Coman',
+				'Muller',
+				'Gnarby',
+				'Lewandowski',
+			],
+			[
+				'Burki',
+				'Schulz',
+				'Hummels',
+				'Akanji',
+				'Hakimi',
+				'Weigl',
+				'Witsel',
+				'Hazard',
+				'Brandt',
+				'Sancho',
+				'Gotze',
+			],
+		],
+		score: '4:0',
+		scored: ['Lewandowski', 'Gnarby', 'Lewandowski', 'Hummels'],
+		date: 'Nov 9th, 2037',
+		odds: {
+			team1: 1.33,
+			x: 3.25,
+			team2: 6.5,
+		},
+	};
 
-    //1
-    const [players1, players2] = game.players;
-    console.log("Team 1 : ", players1);
-    console.log("Team 2 : ", players2);
+	//1
+	const [players1, players2] = game.players;
+	console.log('Team 1 : ', players1);
+	console.log('Team 2 : ', players2);
 
-    //2
-    const [gk, ...fieldPlayers] = players1;
-    console.log("Team 1 Goalkeeper", gk);
-    console.log("Team 1 rest of the Players : ", fieldPlayers);
+	//2
+	const [gk, ...fieldPlayers] = players1;
+	console.log('Team 1 Goalkeeper', gk);
+	console.log('Team 1 rest of the Players : ', fieldPlayers);
 
-    //3
-    const [...allPlayers] = [...players1, ...players2];
-    console.log("All Players : ", allPlayers);
+	//3
+	const [...allPlayers] = [...players1, ...players2];
+	console.log('All Players : ', allPlayers);
 
-    //4
-    const [...players1Final] = [...players1, ...['Thiago', 'Coutinho', 'Perisic']];
-    console.log("Team 1 all Players : ", players1Final);
+	//4
+	const [...players1Final] = [
+		...players1,
+		...['Thiago', 'Coutinho', 'Perisic'],
+	];
+	console.log('Team 1 all Players : ', players1Final);
 
-    //5
-    const { odds: { team1, x : draw, team2}} = game;
-    console.log(team1, draw, team2);
+	//5
+	const {
+		odds: { team1, x: draw, team2 },
+	} = game;
+	console.log(team1, draw, team2);
 
-    //6
-    // function printGoals (allPlayers) 
-    // {
-    //     for (let i = 0; i < allPlayers.length; i++)
-    //     {
-    //         let goal = 0;
-    //         for (let j = 0; j < game.scored.length; j++)
-    //         {
-    //             if (game.scored[j] == allPlayers[i])
-    //             {
-    //                 goal++;
-    //             }
-    //         }
-    //         console.log(allPlayers[i], " : ", goal);
-    //     }
-    // }
-    // printGoals(['Davies', 'Muller', 'Lewandowski', 'Kimmich']);
-    // printGoals(allPlayers);
+	//6
+	// function printGoals (allPlayers)
+	// {
+	//     for (let i = 0; i < allPlayers.length; i++)
+	//     {
+	//         let goal = 0;
+	//         for (let j = 0; j < game.scored.length; j++)
+	//         {
+	//             if (game.scored[j] == allPlayers[i])
+	//             {
+	//                 goal++;
+	//             }
+	//         }
+	//         console.log(allPlayers[i], " : ", goal);
+	//     }
+	// }
+	// printGoals(['Davies', 'Muller', 'Lewandowski', 'Kimmich']);
+	// printGoals(allPlayers);
 
-    const printGoals = function (...players) 
-    {
-        console.log(players);
-        console.log(`${players.length} goals were scored`);
-    };
+	const printGoals = function (...players) {
+		console.log(players);
+		console.log(`${players.length} goals were scored`);
+	};
 
-    // printGoals('Davies', 'Muller', 'Lewandowski', 'Kimmich');
-    printGoals('Davies', 'Muller');
-    // printGoals(...game.scored);
-
+	// printGoals('Davies', 'Muller', 'Lewandowski', 'Kimmich');
+	printGoals('Davies', 'Muller');
+	// printGoals(...game.scored);
 </script>

@@ -20,47 +20,47 @@ Test data:
 -->
 
 <script>
-    function calcAverageHumanAge (age) {
-        // // 1
-        // const humanaverage = [];
-        // dogs.forEach(function (value, key) {
-        //     if (value <= 2) {
-        //         humanaverage.push(2 * value);
-        //     }
-        //     else {
-        //         humanaverage.push(16 + value * 4);
-        //     }
-        // });
-        // console.log(humanaverage);
+	function calcAverageHumanAge(age) {
+		// // 1
+		// const humanaverage = [];
+		// dogs.forEach(function (value, key) {
+		//     if (value <= 2) {
+		//         humanaverage.push(2 * value);
+		//     }
+		//     else {
+		//         humanaverage.push(16 + value * 4);
+		//     }
+		// });
+		// console.log(humanaverage);
 
-        // // 2
-        // const newhumanaverage = [];
-        // humanaverage.forEach(function (value, key) {
-        //     if (18 < value) {
-        //         newhumanaverage.push(value);
-        //     }
-        // });
-        // console.log(newhumanaverage);
+		// // 2
+		// const newhumanaverage = [];
+		// humanaverage.forEach(function (value, key) {
+		//     if (18 < value) {
+		//         newhumanaverage.push(value);
+		//     }
+		// });
+		// console.log(newhumanaverage);
 
-        // // 3
-        // let averagehuman = 0;
-        // let count = 0;
-        // newhumanaverage.forEach(function (value) {
-        //     averagehuman += value;
-        //     count++;
-        // });
-        // console.log(averagehuman / count);
+		// // 3
+		// let averagehuman = 0;
+		// let count = 0;
+		// newhumanaverage.forEach(function (value) {
+		//     averagehuman += value;
+		//     count++;
+		// });
+		// console.log(averagehuman / count);
 
-        const humanAges = age.map(age => (age <= 2 ? 2 * age : 16 + age *4));
-        console.log(humanAges);
+		const humanAges = age.map((age) => (age <= 2 ? 2 * age : 16 + age * 4));
+		console.log(humanAges);
 
-        const adults = humanAges.filter(age => age >= 18);
-        console.log(adults);
+		const adults = humanAges.filter((age) => age >= 18);
+		console.log(adults);
 
-        const average = adults.reduce((acc, age) => acc + age, 0) / adults.length;
-        console.log(average);
-    }
+		const average = adults.reduce((acc, age) => acc + age, 0) / adults.length;
+		console.log(average);
+	}
 
-    calcAverageHumanAge([5, 2, 4, 1, 15, 8, 3]);
-    // calcAverageHumanAge([16, 6, 10, 5, 6, 1, 4]);
+	calcAverageHumanAge([5, 2, 4, 1, 15, 8, 3]);
+	// calcAverageHumanAge([16, 6, 10, 5, 6, 1, 4]);
 </script>

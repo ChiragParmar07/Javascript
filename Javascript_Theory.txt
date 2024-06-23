@@ -540,4 +540,3 @@ khushi.init("Khushi", 2001, "Computer Science");
 console.log(khushi);
 khushi.introduce();
 khushi.clacAge();
-

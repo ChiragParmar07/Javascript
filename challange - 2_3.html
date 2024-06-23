@@ -14,39 +14,39 @@ Your tasks:
 Test data: Marks weights 78 kg and is 1.69 m tall. John weights 92 kg and is 1.95 m tall. -->
 
 <script>
-  const Mark = {
-    name: "Mark Miller",
-    mass: 78,
-    height: 1.69,
+	const Mark = {
+		name: 'Mark Miller',
+		mass: 78,
+		height: 1.69,
 
-    calcBMI: function () {
-      this.BMI = this.mass / this.height ** 2;
-      return this.BMI;
-    },
-  };
+		calcBMI: function () {
+			this.BMI = this.mass / this.height ** 2;
+			return this.BMI;
+		},
+	};
 
-  const John = {
-    name: "John Smith",
-    mass: 92,
-    height: 1.95,
+	const John = {
+		name: 'John Smith',
+		mass: 92,
+		height: 1.95,
 
-    calcBMI: function () {
-      this.BMI = this.mass / this.height ** 2;
-      return this.BMI;
-    },
-  };
+		calcBMI: function () {
+			this.BMI = this.mass / this.height ** 2;
+			return this.BMI;
+		},
+	};
 
-  if (Mark.calcBMI > John.calcBMI) {
-    console.log(
-      `${Mark.name}'s BMI(${Mark.calcBMI()}) is higher than ${
-        John.name
-      }'s(${John.calcBMI()}})`
-    );
-  } else {
-    console.log(
-      `${John.name}'s BMI(${John.calcBMI()}) is higher than ${
-        Mark.name
-      }'s(${Mark.calcBMI()}})`
-    );
-  }
+	if (Mark.calcBMI > John.calcBMI) {
+		console.log(
+			`${Mark.name}'s BMI(${Mark.calcBMI()}) is higher than ${
+				John.name
+			}'s(${John.calcBMI()}})`
+		);
+	} else {
+		console.log(
+			`${John.name}'s BMI(${John.calcBMI()}) is higher than ${
+				Mark.name
+			}'s(${Mark.calcBMI()}})`
+		);
+	}
 </script>

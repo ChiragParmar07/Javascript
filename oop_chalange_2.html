@@ -11,34 +11,34 @@ Test data:
 * Data car 1: 'Ford' going at 120 km/h 
 -->
 <script>
-    class CarCl {
-        constructor (make, speed) {
-            this.make = make;
-            this.speedUS = speed;
-        }
+	class CarCl {
+		constructor(make, speed) {
+			this.make = make;
+			this.speedUS = speed;
+		}
 
-        set speedUS (speed) {
-            this.speed = speed * 1.6;
-        }
+		set speedUS(speed) {
+			this.speed = speed * 1.6;
+		}
 
-        get speedUS () {
-            return this.speed / 1.6;
-        }
+		get speedUS() {
+			return this.speed / 1.6;
+		}
 
-        accelerate () {
-            this.speed += 10;
-            return `${this.make} new speed is ${this.speed}`;
-        }
+		accelerate() {
+			this.speed += 10;
+			return `${this.make} new speed is ${this.speed}`;
+		}
 
-        brake () {
-            this.speed -= 5;
-            return `${this.make} new speed is ${this.speed}`;
-        }
-    }
+		brake() {
+			this.speed -= 5;
+			return `${this.make} new speed is ${this.speed}`;
+		}
+	}
 
-    const ford = new CarCl("Ford", 120);
-    console.log(ford.accelerate());
-    console.log(ford.accelerate());
-    console.log(ford.brake());
-    console.log(ford.accelerate());
+	const ford = new CarCl('Ford', 120);
+	console.log(ford.accelerate());
+	console.log(ford.accelerate());
+	console.log(ford.brake());
+	console.log(ford.accelerate());
 </script>

@@ -1,15 +1,15 @@
-const arr = ['a', 'b', 'c', 'd', 'e', 'f', 'g']
-const arr1 = ['s', 'h', 'r', 'u', 't', 'i']
-const arr2 = [[1, 2, 3], [4, 5, 6], 7, 8]
-const arr3 = [[[1, 2], 3], [4, [5, 6]], 7, 8]
-const movements = [100, 1550, -100, 2000, -500, 6000, 1000, -5000]
+const arr = ['a', 'b', 'c', 'd', 'e', 'f', 'g'];
+const arr1 = ['s', 'h', 'r', 'u', 't', 'i'];
+const arr2 = [[1, 2, 3], [4, 5, 6], 7, 8];
+const arr3 = [[[1, 2], 3], [4, [5, 6]], 7, 8];
+const movements = [100, 1550, -100, 2000, -500, 6000, 1000, -5000];
 
-console.log('arr : ', arr)
-console.log('arr1 : ', arr1)
-console.log('arr2 : ', arr2)
-catchMemory.push(strArr[i])
-console.log('arr3 : ', arr3)
-console.log('movements : ', movements)
+console.log('arr : ', arr);
+console.log('arr1 : ', arr1);
+console.log('arr2 : ', arr2);
+catchMemory.push(strArr[i]);
+console.log('arr3 : ', arr3);
+console.log('movements : ', movements);
 
 // ---------- Slice(start, end) ----------
 // The slice() method can be used to create a copy of an array or return a portion of an array.
@@ -36,7 +36,7 @@ console.log('movements : ', movements)
 
 // ---------- concat() ----------
 // Joins arrays and returns an array with the joined arrays
-const arr6 = arr.concat(arr1)
+const arr6 = arr.concat(arr1);
 // const arr6 = [...arr, ...arr1];
 // console.log("arr.concat(arr1) : ", arr6);  // ['a', 'b', 'c', 'd', 'e', 'f', 'g', 's', 'h', 'r', 'u', 't', 'i']
 
@@ -102,7 +102,7 @@ const currencies = new Map([
 	['USD', 'United States Doller'],
 	['EUR', 'Euro'],
 	['GBP', 'Pound sterling'],
-])
+]);
 // currencies.forEach(function (value, key, map) {  // callback funtion
 //     console.log(`${key} : ${value}`);
 // });
@@ -110,8 +110,8 @@ const currencies = new Map([
 // EUR : Euro
 // GBP : Pound sterling
 
-const maparr = [3, 1, 4, 3, 2]
-const newmaparr = maparr.map((cur) => cur * 2) // Arrow function
+const maparr = [3, 1, 4, 3, 2];
+const newmaparr = maparr.map((cur) => cur * 2); // Arrow function
 // const newmaparr = maparr.map(function (cur) {  //Callback function
 //     return cur * 2;
 // });
@@ -121,7 +121,7 @@ const newmaparr = maparr.map((cur) => cur * 2) // Arrow function
 // console.log(newmaparr);  // [6, 2, 8, 6, 4]
 
 // ---------- set ----------  //
-const currenciesUnique = new Set(['USD', 'GBP', 'USD', 'EUR', 'EUR'])
+const currenciesUnique = new Set(['USD', 'GBP', 'USD', 'EUR', 'EUR']);
 // currenciesUnique.forEach(function (value, key, set) {  // callback function
 //     console.log(`${key} : ${value}`);
 // });
@@ -130,8 +130,8 @@ const currenciesUnique = new Set(['USD', 'GBP', 'USD', 'EUR', 'EUR'])
 // EUR : EUR
 
 // ---------- filter() ---------- Creates a new array with every element in an array that pass a test.
-const filterarr = [3, 1, 4, 5, 2]
-const newfilterarr = filterarr.filter((cur) => cur > 2) // Arrow function
+const filterarr = [3, 1, 4, 5, 2];
+const newfilterarr = filterarr.filter((cur) => cur > 2); // Arrow function
 // const newfilterarr = filterarr.filter(function (cur) {  // callback function
 //     return cur > 2;
 // })
@@ -141,25 +141,25 @@ const newfilterarr = filterarr.filter((cur) => cur > 2) // Arrow function
 
 // ---------- reduce() ---------- Reduce the values of an array to a single value (going left-to-right).
 // uses like sum of all elements...
-const reducearr = [3, 1, 4, 3, 2]
+const reducearr = [3, 1, 4, 3, 2];
 // const reducesum = reducearr.reduce(function (acc, cur, i, arr) {  // callback function
 //     return acc + cur;
 // }, 0);
-const reducesum = reducearr.reduce((acc, cur) => acc + cur, 0) // Arrow function
+const reducesum = reducearr.reduce((acc, cur) => acc + cur, 0); // Arrow function
 // let reducesum = 0;
 // for (const cur of reducearr) reducesum += cur;  // without reduce function
 // console.log(reducesum);  // 13
 
 // Find maximum value in an array
 const max = reducearr.reduce((acc, cur) => {
-	if (acc > cur) return acc
-	else return cur
-}, reducearr[0])
+	if (acc > cur) return acc;
+	else return cur;
+}, reducearr[0]);
 // console.log(max);  // 4
 
 // ----------- find() ----------- // Returns the value of the first element in an array that pass a test.
 // find method find a value in an array and return first value which is true for a given condition.
-const fisrstWithdrawal = movements.find((mov) => mov < 0)
+const fisrstWithdrawal = movements.find((mov) => mov < 0);
 // console.log(fisrstWithdrawal);  // -100
 
 const account1 = {
@@ -167,52 +167,52 @@ const account1 = {
 	movements: [200, 450, -400, 3000, -650, -130, 70, 1300],
 	interestRate: 1.2, // %
 	pin: 1111,
-}
+};
 
 const account2 = {
 	owner: 'Jessica Davis',
 	movements: [5000, 3400, -150, -790, -3210, -1000, 8500, -30],
 	interestRate: 1.5,
 	pin: 2222,
-}
+};
 
 const account3 = {
 	owner: 'Steven Thomas Williams',
 	movements: [200, -200, 340, -300, -20, 50, 400, -460],
 	interestRate: 0.7,
 	pin: 3333,
-}
+};
 
 const account4 = {
 	owner: 'Sarah Smith',
 	movements: [430, 1000, 700, 50, 90],
 	interestRate: 1,
 	pin: 4444,
-}
+};
 
-const accounts = [account1, account2, account3, account4]
+const accounts = [account1, account2, account3, account4];
 
 // Return only Jessica Davis account details
-const account = accounts.find((acc) => acc.owner === 'Jessica Davis')
+const account = accounts.find((acc) => acc.owner === 'Jessica Davis');
 // console.log(account);
 
 // ---------- findindex(element) ---------- // Returns the index of the first element in an array that pass a test.
-const index = arr.findIndex((cur) => cur === 'd')
+const index = arr.findIndex((cur) => cur === 'd');
 // console.log(index);  // 3
 
 // ---------- includes(element) ---------- // Check if an array contains the specified(given) element.
 // return true if a given value is present in an array
-const inarr = movements.includes(-500)
+const inarr = movements.includes(-500);
 // console.log(inarr);  // true
 
 // ---------- some() ---------- // Checks if any of the elements in an array pass a test.
 // return true is any one (atlease one is true) value of an array setisfy the given condition otherwise return false.
-const inarray = movements.some((mov) => mov > 5000)
+const inarray = movements.some((mov) => mov > 5000);
 // console.log(inarray);  // true
 
 // ---------- every() ----------  // Checks if every element in an array pass a test.
 // Every only returns a true if a all of the elements in an array satisfy the condition that we passed in.
-const inarra = movements.every((mov) => mov <= 6000)
+const inarra = movements.every((mov) => mov <= 6000);
 // console.log(inarra);  // true
 
 // ---------- flat(levels(like : 1, 2, 3, ...)) ---------- // take one arguent how many level you want.
@@ -235,7 +235,7 @@ const inarra = movements.every((mov) => mov <= 6000)
 
 const overallBalance = accounts // using flatMap function
 	.flatMap((acc) => acc.movements)
-	.reduce((acc, mov) => acc + mov, 0)
+	.reduce((acc, mov) => acc + mov, 0);
 
 // console.log(overallBalance);  // 17840
 
@@ -269,25 +269,25 @@ const overallBalance = accounts // using flatMap function
 
 // ---------- indexOf(element) ----------  // Search the array for a given element and returns its position
 // if value not found it will return -1
-const indexofarr = movements.indexOf(6000)
+const indexofarr = movements.indexOf(6000);
 // console.log("movements.indexOf(6000) : ", indexofarr);  // 5
 
 // ---------- isArray() ---------- //
-const isarraychk = Array.isArray(arr)
+const isarraychk = Array.isArray(arr);
 // console.log("Array.isArray(arr) : ", isarraychk);  // true
 
 // ---------- length ---------- // Returns length of an array.
-const lengtharr = arr.length
+const lengtharr = arr.length;
 // console.log(lengtharr);  // 7
 
 // ---------- shift() ----------  // Removes the first element of an array, and returns that element
-const shiftele = arr.shift()
+const shiftele = arr.shift();
 // console.log(shiftele);  // a
 
 // ---------- unshift() ----------  // Adds new elements to the beginning of an array, and returns the new length.
-const unshiftele = arr.unshift('h')
+const unshiftele = arr.unshift('h');
 // console.log(unshiftele);  // 7
 
 // ---------- toString() ----------  // Converts an array to a string, and returns the result.
-const arrstr = arr1.toString()
+const arrstr = arr1.toString();
 // console.log(arrstr);  // s,h,r,u,t,i

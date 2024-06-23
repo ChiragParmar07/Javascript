@@ -13,18 +13,18 @@
  */
 const mathChallenge = (str) => {
 	for (let i = 1; i <= 10; i++) {
-		const data = str.split('=')
+		const data = str.split('=');
 		if (data[0].includes('x')) {
-			data[0] = data[0].replace('x', i)
+			data[0] = data[0].replace('x', i);
 			if (eval(data[0]) === data[1]) {
-				return i
+				return i;
 			} else {
-				data[0] = data[0].replace('x', i)
+				data[0] = data[0].replace('x', i);
 			}
-		} else return eval(data[0])
+		} else return eval(data[0]);
 	}
-	return 0
-}
+	return 0;
+};
 // console.log(mathChallenge('6 = 4x - 2'));
 
 // Exam 1 : Question 2 -->
@@ -60,8 +60,8 @@ function ArrayChallenge(arr) {}
  * Output: abc
  */
 function ArrayChallenge(strArr) {
-	strArr.sort((a, b) => b.length - a.length)
-	return strArr[2]
+	strArr.sort((a, b) => b.length - a.length);
+	return strArr[2];
 }
 // console.log(ArrayChallenge(["coder", "byte", "code"]));
 // console.log(ArrayChallenge(["abc", "defg", "z", "hijk"]));
@@ -71,26 +71,26 @@ function ArrayChallenge(strArr) {
  * Split Word into Two and Check Existence in Comma Separated String Sequence
  */
 function splitWordIntoTwo(strArr) {
-	const word = strArr[0]
-	const wordArr = strArr[1].split(',')
-	const newArr = []
+	const word = strArr[0];
+	const wordArr = strArr[1].split(',');
+	const newArr = [];
 
 	for (let i = 0; i < wordArr.length; i++) {
 		for (let j = 0; j < wordArr.length; j++) {
 			if (wordArr[i] + wordArr[j] === word) {
-				newArr.push(wordArr[i])
-				newArr.push(wordArr[j])
-				break
+				newArr.push(wordArr[i]);
+				newArr.push(wordArr[j]);
+				break;
 			}
 		}
 	}
-	return newArr.join(',')
+	return newArr.join(',');
 }
 
-const strArr1 = ['powerhouse', 'p,pow,power,house,pose,poser']
-const strArr2 = ['baseball', 'b,ba,base,ball,baseba,all']
-// console.log(splitWordIntoTwo(strArr1))
-// console.log(splitWordIntoTwo(strArr2))
+const strArr1 = ['powerhouse', 'p,pow,power,house,pose,poser'];
+const strArr2 = ['baseball', 'b,ba,base,ball,baseba,all'];
+// console.log(splitWordIntoTwo(strArr1));
+// console.log(splitWordIntoTwo(strArr2));
 
 // Exam 2 : Question 2 -->
 /*
@@ -100,27 +100,27 @@ const strArr2 = ['baseball', 'b,ba,base,ball,baseba,all']
  * return round of (sum / total no of letter)
  */
 function strOps(str) {
-	let sum = 0
+	let sum = 0;
 
 	//  Array of numbers
 	const numArr = str.split('').filter((value) => {
-		return Number.isInteger(Number.parseInt(value))
-	})
+		return Number.isInteger(Number.parseInt(value));
+	});
 
 	// Sum of all numbers
 	numArr.forEach((value) => {
-		sum += Number.parseInt(value)
-	})
+		sum += Number.parseInt(value);
+	});
 
 	//   Letters Array
 	const letterArr = str.split('').filter((value) => {
-		return value.match(/[a-zA-Z]/)
-	})
+		return value.match(/[a-zA-Z]/);
+	});
 
-	return Math.round(sum / letterArr.length)
+	return Math.round(sum / letterArr.length);
 }
-console.log(strOps('Hello5,23-32,defge'))
-console.log(strOps('1o5,2e3d6fg9jhvjhv32s2'))
+// console.log(strOps("Hello5,23-32,defge"));
+// console.log(strOps("1o5,2e3d6fg9jhvjhv32s2"));
 
 // Exam 2 : Question 3 -->
 
@@ -129,25 +129,25 @@ function test(strArr) {
 	const arrEle1 = strArr[0]
 		.substr(1, strArr[0].length - 2)
 		.replaceAll(' ', '')
-		.split(',')
+		.split(',');
 	const arrEle2 = strArr[1]
 		.substr(1, strArr[1].length - 2)
 		.replaceAll(' ', '')
-		.split(',')
-	let maxLen = arrEle1.length >= arrEle2.length ? arrEle1 : arrEle2
-	let minLen = arrEle1.length <= arrEle2.length ? arrEle1 : arrEle2
-	let strAns = ''
+		.split(',');
+	let maxLen = arrEle1.length >= arrEle2.length ? arrEle1 : arrEle2;
+	let minLen = arrEle1.length <= arrEle2.length ? arrEle1 : arrEle2;
+	let strAns = '';
 	for (let i = 0; i < maxLen.length; i++) {
 		if (i < minLen.length) {
-			let sum = Number.parseInt(maxLen[i]) + Number.parseInt(minLen[i])
-			strAns += sum + '-'
+			let sum = Number.parseInt(maxLen[i]) + Number.parseInt(minLen[i]);
+			strAns += sum + '-';
 		} else {
-			strAns += maxLen[i] + '-'
+			strAns += maxLen[i] + '-';
 		}
 	}
-	return strAns.substring(0, strAns.length - 1)
+	return strAns.substring(0, strAns.length - 1);
 }
-strArr = ['[1, 2, 3, 10, 5]', '[1, 2, 3, 10, 5 ,11]']
+strArr = ['[1, 2, 3, 10, 5]', '[1, 2, 3, 10, 5 ,11]'];
 // console.log(test(strArr));
 
 // Exam 3 : Question 3 -->

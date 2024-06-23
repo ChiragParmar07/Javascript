@@ -14,19 +14,19 @@
   Output: 0
 */
 const mathChallenge = (str) => {
-	let x = 0
+	let x = 0;
 	while (true) {
-		console.log('==> ', x)
-		let temp = str.replace('x', x)
-		let [lhs, rhs] = temp.split('=')
-		lhs = eval(lhs)
-		rhs = eval(rhs)
+		console.log('==> ', x);
+		let temp = str.replace('x', x);
+		let [lhs, rhs] = temp.split('=');
+		lhs = eval(lhs);
+		rhs = eval(rhs);
 		if (lhs === rhs) {
-			return x
+			return x;
 		}
-		x++
+		x++;
 	}
-}
+};
 // console.log(mathChallenge('6 = 4x - 2'))
 
 /*
@@ -49,65 +49,65 @@ const mathChallenge = (str) => {
 */
 
 function arrayMinJumps(arr) {
-	let max = arr[0]
+	let max = arr[0];
 	for (let i = 0; i < arr.length; i++) {
 		if (arr[i] > max) {
-			max = arr[i]
+			max = arr[i];
 		}
 	}
-	const maxIndex = arr.indexOf(max)
-	let step = max
-	let i = maxIndex
-	let count = 1
-	return rightSideCheck(arr, i, step, count, maxIndex)
+	const maxIndex = arr.indexOf(max);
+	let step = max;
+	let i = maxIndex;
+	let count = 1;
+	return rightSideCheck(arr, i, step, count, maxIndex);
 }
 
 function rightSideCheck(arr, i, step, count, maxIndex) {
 	while (step !== 0) {
 		if (i === arr.length) {
-			i = 0
+			i = 0;
 		}
-		step--
-		i++
+		step--;
+		i++;
 	}
 	if (i === maxIndex) {
-		return count
+		return count;
 	} else if (i < maxIndex) {
-		count++
-		step = arr[i]
-		return rightSideCheck(arr, i, step, count, maxIndex)
+		count++;
+		step = arr[i];
+		return rightSideCheck(arr, i, step, count, maxIndex);
 	} else {
-		count++
-		step = arr[i]
-		return leftSideCheck(arr, i, step, count, maxIndex)
+		count++;
+		step = arr[i];
+		return leftSideCheck(arr, i, step, count, maxIndex);
 	}
 }
 
 function leftSideCheck(arr, i, step, count, maxIndex) {
 	while (step !== 0) {
 		if (i === 0) {
-			i = arr.length
+			i = arr.length;
 		}
-		step--
-		i--
+		step--;
+		i--;
 	}
 	if (i === maxIndex) {
-		return count
+		return count;
 	} else if (i < maxIndex) {
-		count++
-		step = arr[i]
-		return rightSideCheck(arr, i, step, count, maxIndex)
+		count++;
+		step = arr[i];
+		return rightSideCheck(arr, i, step, count, maxIndex);
 	} else {
-		count++
-		step = arr[i]
-		return leftSideCheck(arr, i, step, count, maxIndex)
+		count++;
+		step = arr[i];
+		return leftSideCheck(arr, i, step, count, maxIndex);
 	}
 }
 
 // Example usage
-console.log(arrayMinJumps([2, 3, 5, 6, 1])) // Output: 2
-console.log(arrayMinJumps([1, 2, 3, 4, 2])) // Output: 4
-console.log(arrayMinJumps([1, 7, 1, 1, 1, 1])) // Output: 2
+console.log(arrayMinJumps([2, 3, 5, 6, 1])); // Output: 2
+console.log(arrayMinJumps([1, 2, 3, 4, 2])); // Output: 4
+console.log(arrayMinJumps([1, 7, 1, 1, 1, 1])); // Output: 2
 // console.log(arrayMinJumps([0, 5, 2]))
 
 /*
@@ -126,11 +126,11 @@ console.log(arrayMinJumps([1, 7, 1, 1, 1, 1])) // Output: 2
   Output: abc
 */
 const findThirdLargest = (arr) => {
-	arr = arr.sort((a, b) => b.length - a.length)
-	return arr[2]
-}
-const arr1 = ['hello', 'world', 'before', 'all']
-const arr2 = ['abc', 'defg', 'z', 'hijk']
+	arr = arr.sort((a, b) => b.length - a.length);
+	return arr[2];
+};
+const arr1 = ['hello', 'world', 'before', 'all'];
+const arr2 = ['abc', 'defg', 'z', 'hijk'];
 // console.log('findThirdLargest => ', findThirdLargest(arr1))
 // console.log('findThirdLargest => ', findThirdLargest(arr2))
 
@@ -143,20 +143,20 @@ const arr2 = ['abc', 'defg', 'z', 'hijk']
   return round of (sum / total no of letter)
 */
 const strOps = (str) => {
-	let numSum = 0
-	let strLength = 0
+	let numSum = 0;
+	let strLength = 0;
 
 	str.split('').forEach((item) => {
 		// if (!isNaN(item)) numSum = numSum + Number(item)
-		if (item.match(/[0-9]/)) numSum = numSum + Number(item)
-		else if (item.match(/[a-zA-z]/)) strLength = strLength + 1
-	})
+		if (item.match(/[0-9]/)) numSum = numSum + Number(item);
+		else if (item.match(/[a-zA-z]/)) strLength = strLength + 1;
+	});
 
-	return Math.round(numSum / strLength)
-}
+	return Math.round(numSum / strLength);
+};
 
-const str1 = 'Hello5,23-32,defge'
-const str2 = '1o5,2e3d6fg9jhvjhv32s2'
+const str1 = 'Hello5,23-32,defge';
+const str2 = '1o5,2e3d6fg9jhvjhv32s2';
 // console.log(`str1 = ${str1} => `, strOps(str1))
 // console.log(`str2 = ${str2} => `, strOps(str2))
 
@@ -178,41 +178,41 @@ const str2 = '1o5,2e3d6fg9jhvjhv32s2'
   Output: 8
 */
 const CharacterRemoval = (strArr) => {
-	let word = strArr[0]
-	let dict = strArr[1]
-	let dictArr = dict.split(',')
-	let min = Number.MAX_VALUE
-	dictArr = dictArr.sort((a, b) => b.length - a.length)
+	let word = strArr[0];
+	let dict = strArr[1];
+	let dictArr = dict.split(',');
+	let min = Number.MAX_VALUE;
+	dictArr = dictArr.sort((a, b) => b.length - a.length);
 	// console.log(dictArr);
 	for (let i = 0; i < dictArr.length; i++) {
-		let newWord = word
-		let curr = dictArr[i]
-		let currArr = curr.split('')
+		let newWord = word;
+		let curr = dictArr[i];
+		let currArr = curr.split('');
 		// console.log(currArr);
 		for (let j = 0; j < currArr.length; j++) {
 			if (newWord.indexOf(currArr[j]) != -1) {
-				let index = newWord.indexOf(currArr[j])
+				let index = newWord.indexOf(currArr[j]);
 				newWord =
-					newWord.slice(0, index) + newWord.slice(index + 1, newWord.length)
+					newWord.slice(0, index) + newWord.slice(index + 1, newWord.length);
 				// console.log(newWord)
 			}
 		}
 		if (min > newWord.length) {
-			min = newWord.length
+			min = newWord.length;
 		}
 	}
-	return min
-}
+	return min;
+};
 
 let ans1 = CharacterRemoval([
 	'baseball',
 	'a,all,b,ball,bas,base,cat,code,d,e,quit,z',
-])
-let ans2 = CharacterRemoval(['apbpleeeef', 'a,ab,abc,abcg,b,c,dog,e,efd,zzzz'])
+]);
+let ans2 = CharacterRemoval(['apbpleeeef', 'a,ab,abc,abcg,b,c,dog,e,efd,zzzz']);
 let ans3 = CharacterRemoval([
 	'worlcde',
 	'apple,bat,cat,goodbye,hello,yellow,why,world',
-])
+]);
 // console.log(ans1)
 // console.log(ans2)
 // console.log(ans3)
@@ -223,23 +223,23 @@ let ans3 = CharacterRemoval([
   Split Word into Two and Check Existence in Comma Separated String Sequence
 */
 const splitWordIntoTwo = (strArr) => {
-	const word = strArr[0]
-	const wordArr = strArr[1].split(',')
-	const newArr = []
+	const word = strArr[0];
+	const wordArr = strArr[1].split(',');
+	const newArr = [];
 
 	for (let i = 0; i < wordArr.length; i++) {
 		for (let j = 0; j < wordArr.length; j++) {
 			if (wordArr[i] + wordArr[j] === word) {
-				newArr.push(wordArr[i])
-				newArr.push(wordArr[j])
+				newArr.push(wordArr[i]);
+				newArr.push(wordArr[j]);
 			}
 		}
 	}
-	return newArr.toString()
-}
+	return newArr.toString();
+};
 
-const strArr1 = ['powerhouse', 'p,pow,power,house,pose,poser']
-const strArr2 = ['baseball', 'b,ba,base,ball,baseba,all']
+const strArr1 = ['powerhouse', 'p,pow,power,house,pose,poser'];
+const strArr2 = ['baseball', 'b,ba,base,ball,baseba,all'];
 // console.log('splitWordIntoTwo => ', splitWordIntoTwo(strArr1))
 // console.log('splitWordIntoTwo => ', splitWordIntoTwo(strArr2))
 
@@ -268,47 +268,47 @@ const sumElements = (strArr) => {
 	const arrEle1 = strArr[0]
 		.substr(1, strArr[0].length - 2)
 		.replaceAll(' ', '')
-		.split(',')
+		.split(',');
 	const arrEle2 = strArr[1]
 		.substr(1, strArr[1].length - 2)
 		.replaceAll(' ', '')
-		.split(',')
+		.split(',');
 
-	let maxLen = arrEle1.length >= arrEle2.length ? arrEle1 : arrEle2
-	let minLen = arrEle1.length <= arrEle2.length ? arrEle1 : arrEle2
-	let strAns = ''
+	let maxLen = arrEle1.length >= arrEle2.length ? arrEle1 : arrEle2;
+	let minLen = arrEle1.length <= arrEle2.length ? arrEle1 : arrEle2;
+	let strAns = '';
 
 	for (let i = 0; i < maxLen.length; i++) {
 		if (i < minLen.length) {
-			let sum = Number.parseInt(maxLen[i]) + Number.parseInt(minLen[i])
-			strAns += sum + '-'
-			sum = 0
+			let sum = Number.parseInt(maxLen[i]) + Number.parseInt(minLen[i]);
+			strAns += sum + '-';
+			sum = 0;
 		} else {
-			strAns += maxLen[i] + '-'
+			strAns += maxLen[i] + '-';
 		}
 	}
 
-	return strAns.substring(0, strAns.length - 1)
-}
-const strArr = ['[1, 2, 3, 10, 5]', '[1, 2, 3, 10, 5 ,11]']
+	return strAns.substring(0, strAns.length - 1);
+};
+const strArr = ['[1, 2, 3, 10, 5]', '[1, 2, 3, 10, 5 ,11]'];
 // console.log(sumElements(strArr))
 
 // Solution 2
 function addele(str) {
-	const [first, second] = str
-	const arr1 = eval(first)
-	const arr2 = eval(second)
-	let add
+	const [first, second] = str;
+	const arr1 = eval(first);
+	const arr2 = eval(second);
+	let add;
 	if (arr1.length > arr2.length) {
 		add = arr1.map((val, index) => {
-			return arr2[index] ? arr2[index] + val : val
-		})
+			return arr2[index] ? arr2[index] + val : val;
+		});
 	} else {
 		add = arr2.map((val, index) => {
-			return arr1[index] ? arr1[index] + val : val
-		})
+			return arr1[index] ? arr1[index] + val : val;
+		});
 	}
-	return add.join('-')
+	return add.join('-');
 }
 // console.log(addele(['[5, 2, 3]', '[2, 2, 3, 10, 6]']))
 // console.log(addele(['[1, 2, 1]', '[2, 1, 5, 2]']))

@@ -16,26 +16,26 @@ Your tasks:
 
 <script>
 	const car = function (make, speed) {
-		this.make = make
-		this.speed = speed
-	}
+		this.make = make;
+		this.speed = speed;
+	};
 
 	car.prototype.accelerate = function () {
-		this.speed += 10
-		return `${this.make} new speed is ${this.speed}`
-	}
+		this.speed += 10;
+		return `${this.make} new speed is ${this.speed}`;
+	};
 
 	car.prototype.brake = function () {
-		this.speed -= 5
-		return `${this.make} new speed is ${this.speed}`
-	}
+		this.speed -= 5;
+		return `${this.make} new speed is ${this.speed}`;
+	};
 
-	const BMW = new car('BMW', 110)
-	const Audi = new car('Audi', 90)
+	const BMW = new car('BMW', 110);
+	const Audi = new car('Audi', 90);
 
-	console.log(BMW.accelerate())
-	console.log(BMW.accelerate())
-	console.log(BMW.brake())
-	console.log(Audi.accelerate())
-	console.log(Audi.brake())
+	console.log(BMW.accelerate());
+	console.log(BMW.accelerate());
+	console.log(BMW.brake());
+	console.log(Audi.accelerate());
+	console.log(Audi.brake());
 </script>

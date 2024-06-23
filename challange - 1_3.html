@@ -21,62 +21,50 @@ Test data:
 * Data Bonus 2: Dolphins score 97, 112 and 101. Koalas score 109, 95 and 106 -->
 
 <script>
-    const d1  = 96;
-    const d2  = 108;
-    const d3  = 89;
-    const k1  = 88;
-    const k2  = 91;
-    const k3  = 110;
+	const d1 = 96;
+	const d2 = 108;
+	const d3 = 89;
+	const k1 = 88;
+	const k2 = 91;
+	const k3 = 110;
 
-    // const d1  = 97;
-    // const d2  = 112;
-    // const d3  = 101;
-    // const k1  = 109;
-    // const k2  = 95;
-    // const k3  = 123;
+	// const d1  = 97;
+	// const d2  = 112;
+	// const d3  = 101;
+	// const k1  = 109;
+	// const k2  = 95;
+	// const k3  = 123;
 
-    // const d1  = 97;
-    // const d2  = 112;
-    // const d3  = 101;
-    // const k1  = 109;
-    // const k2  = 95;
-    // const k3  = 106;
+	// const d1  = 97;
+	// const d2  = 112;
+	// const d3  = 101;
+	// const k1  = 109;
+	// const k2  = 95;
+	// const k3  = 106;
 
-    // 1
-    const dAverage = d1 + d2 + d3 / 3;
-    const kAverage = k1 + k2 + k3 / 3;
-    console.log(dAverage, kAverage);
+	// 1
+	const dAverage = d1 + d2 + d3 / 3;
+	const kAverage = k1 + k2 + k3 / 3;
+	console.log(dAverage, kAverage);
 
-    // 2
-    if (dAverage > kAverage)
-    {
-        console.log("Dolphins is win the match");
-    }
-    else if (dAverage < kAverage)
-    {
-        console.log("Koalas is win the match");
-    }
-    else
-    {
-        console.log("Match draw");
-    }
+	// 2
+	if (dAverage > kAverage) {
+		console.log('Dolphins is win the match');
+	} else if (dAverage < kAverage) {
+		console.log('Koalas is win the match');
+	} else {
+		console.log('Match draw');
+	}
 
-    // 3, 4
-    const minimum = 100;
-    if (dAverage > kAverage && dAverage >= minimum)
-    {
-        console.log("Dolphins is win the match");
-    }
-    else if (dAverage < kAverage && kAverage >= minimum)
-    {
-        console.log("Koalas is win the match");
-    }
-    else if (dAverage === kAverage && dAverage >= 100 && kAverage >= 100)
-    {
-        console.log("Match draw");
-    }
-    else
-    {
-        console.log("No one Win");
-    }
+	// 3, 4
+	const minimum = 100;
+	if (dAverage > kAverage && dAverage >= minimum) {
+		console.log('Dolphins is win the match');
+	} else if (dAverage < kAverage && kAverage >= minimum) {
+		console.log('Koalas is win the match');
+	} else if (dAverage === kAverage && dAverage >= 100 && kAverage >= 100) {
+		console.log('Match draw');
+	} else {
+		console.log('No one Win');
+	}
 </script>

@@ -23,27 +23,28 @@ Hints: Use tools from all lectures in this section so far 😉
 -->
 
 <script>
-    const dogsJulia = [3, 5, 2, 12, 7];
-    const dogsKate = [4, 1, 15, 8, 3];
+	const dogsJulia = [3, 5, 2, 12, 7];
+	const dogsKate = [4, 1, 15, 8, 3];
 
-    function checkDogs (dogsJulia, dogsKate) {
-        const actualDogsJulia = dogsJulia.slice();
-        actualDogsJulia.splice(0, 1);
-        actualDogsJulia.splice(2, 3);
-        console.log(actualDogsJulia);
-        
-        const newdogs = actualDogsJulia.concat(dogsKate);
-        console.log(newdogs);
+	function checkDogs(dogsJulia, dogsKate) {
+		const actualDogsJulia = dogsJulia.slice();
+		actualDogsJulia.splice(0, 1);
+		actualDogsJulia.splice(2, 3);
+		console.log(actualDogsJulia);
 
-        newdogs.forEach(function (value, key) {
-            if (value >= 3) {
-                console.log(`Dog number ${key + 1} is an adult. and is ${value} years old`);
-            }
-            else {
-                console.log(`Dog number ${key + 1} is still a puppy`);
-            }
-        });
-    }
+		const newdogs = actualDogsJulia.concat(dogsKate);
+		console.log(newdogs);
 
-    checkDogs(dogsJulia, dogsKate);
+		newdogs.forEach(function (value, key) {
+			if (value >= 3) {
+				console.log(
+					`Dog number ${key + 1} is an adult. and is ${value} years old`
+				);
+			} else {
+				console.log(`Dog number ${key + 1} is still a puppy`);
+			}
+		});
+	}
+
+	checkDogs(dogsJulia, dogsKate);
 </script>
