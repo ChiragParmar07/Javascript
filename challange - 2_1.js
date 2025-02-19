@@ -1,4 +1,4 @@
-<!-- 
+/*
 There are two gymnastics teams, Dolphins and Koalas. They compete against each
 other 3 times. The winner with the highest average score wins a trophy!
 the Dolphins and the Koalas! There is a new gymnastics discipline, which works differently.
@@ -23,40 +23,39 @@ Test data:
 
 Hints:
 * To calculate average of 3 values, add them all together and divide by 3
-* To check if number A is at least double number B, check for A >= 2 * B. Apply this to the team's average scores 😉 -->
+* To check if number A is at least double number B, check for A >= 2 * B. Apply this to the team's average scores 😉
+*/
 
-<script>
-	// const d1  = 44;
-	// const d2  = 23;
-	// const d3  = 71;
+// const d1  = 44;
+// const d2  = 23;
+// const d3  = 71;
 
-	// const k1  = 65;
-	// const k2  = 54;
-	// const k3  = 49;
+// const k1  = 65;
+// const k2  = 54;
+// const k3  = 49;
 
-	const d1 = 85;
-	const d2 = 54;
-	const d3 = 41;
+const d1 = 85;
+const d2 = 54;
+const d3 = 41;
 
-	const k1 = 23;
-	const k2 = 34;
-	const k3 = 27;
+const k1 = 23;
+const k2 = 34;
+const k3 = 27;
 
-	const calcAverage = (v1, v2, v3) => (v1 + v2 + v3) / 3;
+const calcAverage = (v1, v2, v3) => (v1 + v2 + v3) / 3;
 
-	const avgDolphins = calcAverage(d1, d2, d3);
-	const avgKoalas = calcAverage(k1, k2, k3);
-	console.log(avgDolphins, avgKoalas);
+const avgDolphins = calcAverage(d1, d2, d3);
+const avgKoalas = calcAverage(k1, k2, k3);
+console.log(avgDolphins, avgKoalas);
 
-	const checkWinner = (avgDolphins, avgKoalas) => {
-		if (avgDolphins >= 2 * avgKoalas) {
-			return `Dolphins is win`;
-		} else if (avgKoalas >= 2 * avgDolphins) {
-			return `Koalas is win`;
-		} else {
-			return `one is win`;
-		}
-	};
+const checkWinner = (avgDolphins, avgKoalas) => {
+	if (avgDolphins >= 2 * avgKoalas) {
+		return `Dolphins is win`;
+	} else if (avgKoalas >= 2 * avgDolphins) {
+		return `Koalas is win`;
+	} else {
+		return `one is win`;
+	}
+};
 
-	console.log(checkWinner(avgDolphins, avgKoalas));
-</script>
+console.log(checkWinner(avgDolphins, avgKoalas));

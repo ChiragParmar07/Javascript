@@ -1,4 +1,4 @@
-<!-- 
+/*
 Steven is still building his tip calculator, using the same rules as before: Tip 15% of
 the bill if the bill value is between 50 and 300, and if the value is different, the tip is 20%.
 
@@ -15,20 +15,18 @@ Your tasks:
 
 Hint: Remember that an array needs a value in each position, and that value can
     actually be the returned value of a function! So you can just call a function as array
-    values (so don't store the tip values in separate variables first, but right in the new array) 😉 -->
+    values (so don't store the tip values in separate variables first, but right in the new array) 😉 
+    */
 
-<script>
-	const bill = [125, 555, 44];
+const bill = [125, 555, 44];
 
-	const calcTip = (bill) => {
-		const tip =
-			bill >= 50 && bill <= 300 ? (bill * 15) / 100 : (bill * 20) / 100;
-		return tip;
-	};
+const calcTip = (bill) => {
+	const tip = bill >= 50 && bill <= 300 ? (bill * 15) / 100 : (bill * 20) / 100;
+	return tip;
+};
 
-	var total = [];
-	total.push(bill[0] + calcTip(bill[0]));
-	total.push(bill[1] + calcTip(bill[1]));
-	total.push(bill[2] + calcTip(bill[2]));
-	console.log(total);
-</script>
+var total = [];
+total.push(bill[0] + calcTip(bill[0]));
+total.push(bill[1] + calcTip(bill[1]));
+total.push(bill[2] + calcTip(bill[2]));
+console.log(total);

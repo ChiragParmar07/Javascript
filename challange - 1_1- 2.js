@@ -1,4 +1,4 @@
-<!-- 
+/*
 Mark and John are trying to compare their BMI (Body Mass Index), 
 which is calculated using the formula:
 BMI = mass / height ** 2 = mass / (height * height) (mass in kg and height in meter).
@@ -12,28 +12,27 @@ Your tasks:
 
 Test data:
 * Data 1: Marks weights 78 kg and is 1.69 m tall. John weights 92 kg and is 1.95m tall.
-* Data 2: Marks weights 95 kg and is 1.88 m tall. John weights 85 kg and is 1.76m tall. -->
+* Data 2: Marks weights 95 kg and is 1.88 m tall. John weights 85 kg and is 1.76m tall.
+*/
 
-<script>
-	// 1
-	const markWeight = 78;
-	const markHeight = 1.69;
-	const johnWeight = 92;
-	const johnHeight = 1.95;
+// 1
+const markWeight = 78;
+const markHeight = 1.69;
+const johnWeight = 92;
+const johnHeight = 1.95;
 
-	// 2
-	const markBMI = markWeight / markHeight ** 2;
-	const johnBMI = johnWeight / (johnHeight * johnHeight);
+// 2
+const markBMI = markWeight / markHeight ** 2;
+const johnBMI = johnWeight / (johnHeight * johnHeight);
 
-	// 3
-	let markHigherBMI = markBMI > johnBMI;
-	console.log(markHigherBMI);
+// 3
+let markHigherBMI = markBMI > johnBMI;
+console.log(markHigherBMI);
 
-	// 4, 5
-	if (markBMI > johnBMI) {
-		markHigherBMI = true;
-		console.log(`Mark's BMI(${markBMI}) is Higher then John's!(${johnBMI})`);
-	} else {
-		console.log(`John's BMI(${johnBMI}) is Higher then mark's!(${markBMI})`);
-	}
-</script>
+// 4, 5
+if (markBMI > johnBMI) {
+	markHigherBMI = true;
+	console.log(`Mark's BMI(${markBMI}) is Higher then John's!(${johnBMI})`);
+} else {
+	console.log(`John's BMI(${johnBMI}) is Higher then mark's!(${markBMI})`);
+}

@@ -1,4 +1,4 @@
-<!-- 
+/*
 Julia and Kate are doing a study on dogs. So each of them asked 5 dog owners
 about their dog's age, and stored the data into an array (one array for each). For
 now, they are just interested in knowing whether a dog is an adult or a puppy.
@@ -20,31 +20,29 @@ Test data:
 * Data 2: Julia's data [9, 16, 6, 8, 3], Kate's data [10, 5, 6, 1, 4]
 
 Hints: Use tools from all lectures in this section so far 😉 
--->
+*/
 
-<script>
-	const dogsJulia = [3, 5, 2, 12, 7];
-	const dogsKate = [4, 1, 15, 8, 3];
+const dogsJulia = [3, 5, 2, 12, 7];
+const dogsKate = [4, 1, 15, 8, 3];
 
-	function checkDogs(dogsJulia, dogsKate) {
-		const actualDogsJulia = dogsJulia.slice();
-		actualDogsJulia.splice(0, 1);
-		actualDogsJulia.splice(2, 3);
-		console.log(actualDogsJulia);
+function checkDogs(dogsJulia, dogsKate) {
+	const actualDogsJulia = dogsJulia.slice();
+	actualDogsJulia.splice(0, 1);
+	actualDogsJulia.splice(2, 3);
+	console.log(actualDogsJulia);
 
-		const newdogs = actualDogsJulia.concat(dogsKate);
-		console.log(newdogs);
+	const newdogs = actualDogsJulia.concat(dogsKate);
+	console.log(newdogs);
 
-		newdogs.forEach(function (value, key) {
-			if (value >= 3) {
-				console.log(
-					`Dog number ${key + 1} is an adult. and is ${value} years old`
-				);
-			} else {
-				console.log(`Dog number ${key + 1} is still a puppy`);
-			}
-		});
-	}
+	newdogs.forEach(function (value, key) {
+		if (value >= 3) {
+			console.log(
+				`Dog number ${key + 1} is an adult. and is ${value} years old`
+			);
+		} else {
+			console.log(`Dog number ${key + 1} is still a puppy`);
+		}
+	});
+}
 
-	checkDogs(dogsJulia, dogsKate);
-</script>
+checkDogs(dogsJulia, dogsKate);
